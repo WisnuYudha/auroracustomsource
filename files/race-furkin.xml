@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Furkin</name>
+		<description></description>
+		<author url="https://www.dandwiki.com">Wiki User</author>
+		<update version="0.0.1">
+			<file name="race-furkin.xml"/>
+		</update>
+	</info>
+
+	<element name="Furkin" type="Race" source="D&amp;D Wiki" id="ID_RACE_FURKIN">
+		<description>
+			<p class="flavor">The chaotic magic of the Feywild has long-reaching and unpredictable effects on anything that wanders into its realm and remains there. Over generations, common animals that wandered into the realm of the Feywild who had little choice but to carve out a living for themselves began to slowly change, becoming smarter and more humanoid while retaining some of their bestial features.</p>
+			<h4>HISTORY</h4>
+			<p>There are many places where the barrier between realms fluctuates, and it is not uncommon for many to accidentally wander into an alternate plane without realizing it. The same is true of any animal. Over generations of survival and breeding in the naturally magical realm of the Feywild, groups of animals that had become lost or who were swept into the realm began to slowly change. They became smarter, gained the power of speech, and started to walk upright. Tenuously at first, and then fully bipedal. They formed societies, learned languages, built homes.</p> 
+			<p class="indent">Until the First Sundering.</p>
+			<p class="indent">A group of archmages attempted to tear open the veil that separated the Prime Material Plane from the Feywild in a bid to claim the natural magic of the realm for themselves. They miscalculated, however. The magic of the Feywild was not something they could control, even as a group, and it destroyed them. The rift between the planes was left open long enough for many fey creatures to escape into the Prime Material Plane, including the creatures that had become known as kin. The scar from the Sundering still remains but is hidden deep within a forest and guarded by a city of kin that surrounds it.</p>
+			<p class="indent">The kin were not well-received by the more common races (humans, elves, dwarves, and the like). Many viewed them as monsters or new breeds of lycanthropes. The kin were hunted by the common races, either to try and wipe them out or take them as slaves and trophies.</p>
+			<h4>SOCIETY</h4>
+			<p>Kin often keep to their own. Most people are uncomfortable with them, unable to distinguish them from lycanthropes. Although much younger than other races of the Material Plane, they are as advanced culturally due to their accelerated evolution. They usually live in tribal villages appropriately located near where their more wild counterparts can be found. Wolfkin and snakekin, for example, prefer forests, while heronkin and otterkin prefer rivers and lakes. Those kin that live with the more common races are almost always slaves or live in city slums where they can hide more easily. Kin in positions of power or nobility are almost completely unheard of and are very rarely treated with the same respect their peers demand.</p>
+			<p class="indent">The kin are divided into three major groups.</p>
+			<p class="indent">Scalekin are the Kin who evolved from beasts covered in scales such as snakes, turtles, and crocodiles.</p>
+			<h4>FURKIN NAMES</h4>
+			<p>Kin often take tribal-sounding names once they come of age. Names are generally agender in nature. Those few kin who grew up in other societies, either in slums or as slaves, are given names more appropriate to their surrounding culture.</p>
+			<p>
+			<span class="feature">Example Names</span>: Redfang, First Light, Earthborn, River Flower, Night Sky, Greeneye, Yellowtail, Ravenclaw
+			</p>
+			<h4>FURKIN TRAITS</h4>
+			<p>Humanoid creatures that evolved from animals exposed to the chaotic magic of the Feywild.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Furkin are evolved from creatures that either had to hunt to survive or survive being hunted. Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Due to the evolutionary effect of Feywild magics, kin live longer than their animal counterparts, but not as long as humans. Kin reach adulthood at around 10 years and can live to be around 50 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Kin encompass every alignment, but due to their tight knit sense of community, most tend towards the gentle side of lawful.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Kin run a wide gamut of body types. Your size is either Small or Medium as determined by your subrace.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Kin run a wide gamut of body types. Your speed is determined by your subrace.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Fey Resistance.</em></strong> Due to the magic of the Feywild infusing their being, all kin, no matter what kind, have advantage on saving throws against being charmed and frightened.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common and Sylvan.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Wolfkin, Foxkin, Bearkin, Otterkin, Hyenakin, Lionkin, Ratkin.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Fey Ancestry" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_FEY_RESISTANCE">
+		<description>
+			<p>Due to the magic of the Feywild infusing their being, all kin, no matter what kind, have advantage on saving throws against being charmed and frightened.</p>
+		</description>
+		<sheet>
+			<description>Advantage on saving throws against being charmed and frightened.</description>
+		</sheet>
+	</element>
+
+	<element name="Wolfkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_WOLFKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Wolfkin are agile and nimble. Your Dexterity increases by 2.</p>
+			<p class="indent"><strong><em>Natural Leader.</em></strong>As pack animals, wolfkin understand what it takes to lead large groups. As a bonus action, you can inspire allies within 30 feet that can see and hear you. An ally inspired in this way gains advantage on their first attack on their next turn. This effect ends on an ally at the end of their turn even if they did not attack. After you use this trait, you can't use it again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Pack Tactics.</em></strong> You have advantage on your first attack roll against an enemy each turn if an ally is within 5 feet of the enemy and is not incapacitated.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have advantage on Wisdom (Perception) rolls that rely on hearing or smell.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You stand about the same height as an average human. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d6">5'0"</set>
+			<set name="weight" modifier="2">125 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_LEADER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PACK_TACTICS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SENSES" />
+		</rules>
+	</element> 	
+	<element name="Natural Leader" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_NATURAL_LEADER">
+		<description>
+			<p>As pack animals, wolfkin understand what it takes to lead large groups. As a bonus action, you can inspire allies within 30 feet that can see and hear you. An ally inspired in this way gains advantage on their first attack on their next turn. This effect ends on an ally at the end of their turn even if they did not attack. After you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can inspire allies within 30 feet that can see and hear you. An ally inspired in this way gains advantage on their first attack on their next turn. This effect ends on an ally at the end of their turn even if they did not attack.</description>
+		</sheet>
+	</element>
+	<element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PACK_TACTICS">
+		<description>
+			<p>You have advantage on your first attack roll against an enemy each turn if an ally is within 5 feet of the enemy and is not incapacitated.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on your first attack roll against an enemy each turn if an ally is within 5 feet of the enemy and is not incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_KEEN_SENSES">
+		<description>
+			<p>You have advantage on Wisdom (Perception) rolls that rely on hearing or smell.</p>
+		</description>
+		<sheet/>
+		<description>You have advantage on Wisdom (Perception) rolls that rely on hearing or smell.</description>
+	</element>
+
+	<element name="Foxkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_FOXKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Foxkin are quite amicable. Your Charisma score increases by 2.</p>
+			<p class="indent"><strong><em>Affable.</em></strong> Foxkin are born natural-born speakers and are generally easy to get along with. You gain proficiency with Charisma (Persuasion) and double your proficiency modifier when using this skill.</p>
+			<p class="indent"><strong><em>Elusive.</em></strong> Opportunity attacks against you have disadvantage.</p>
+			<p class="indent"><strong><em>Diplomancy.</em></strong> You know the friends cantrip. At 3rd level, you can cast charm person once per long rest. At 5th level, you can cast suggestion once per long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are a few inches shorter than a typical human. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d4">4'10"</set>
+			<set name="weight" modifier="2">100 lb.</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="2" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AFFABLE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ELUSIVE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIPLOMANCY" />
+		</rules>
+	</element>
+	<element name="Affable" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_AFFABLE">
+		<description>
+			<p>Foxkin are born natural-born speakers and are generally easy to get along with. You gain proficiency with Charisma (Persuasion) and double your proficiency modifier when using this skill.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with Charisma (Persuasion) and double your proficiency modifier when using this skill.</description>
+		</sheet>
+	</element>
+	<element name="Elusive" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_ELUSIVE">
+		<description>
+			<p>Opportunity attacks against you have disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Opportunity attacks against you have disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Diplomancy" type="Racial Trait" source="D&amp;D WIki" id="ID_RACIAL_TRAIT_DIPLOMANCY">
+		<description>
+			<p>You know the <em>friends</em> cantrip. At 3rd level, you can cast <em>charm person</em> once per long rest. At 5th level, you can cast <em>suggestion</em> once per long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the <em>friends</em> cantrip. (Charisma)</description>
+			<description level="3">You know the <em>friends</em> cantrip. You can cast <em>charm person</em> once per long rest. (Charisma)</description>
+			<description level="5">You know the <em>friends</em> cantrip. You can cast <em>charm person</em> and <em>suggestion</em> once per long rest. (Charisma)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS"/>
+		</rules>
+	</element>
+
+	<element name="Bearkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_BEARKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Bearkin are very sturdily built. Your Constitution score increase by 2.</p>
+			<p class="indent"><strong><em>Endurance.</em></strong> Bearkin can call on mighty reserves of stamina in times of need. As a bonus action, you can gain 1d12 plus your Constitution modifier temporary hit points. The bonus hit points last for 1 hour. Once you use this ability, you cannot use it again until you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Large Paws.</em></strong> You are proficient with your unarmed strikes which deal 1d4 points of bludgeoning damage on a hit.</p>
+			<p class="indent"><strong><em>Hibernate.</em></strong> You can recover one level of exhaustion during a short rest. When you spend hit dice to recover hit points, double your Constitution modifier when determining how many hit points you recover for each hit die.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You stand at an imposing height but are not significantly larger than other creatures. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet. Heavy armor does not reduce your speed.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d8">5'8"</set>
+			<set name="weight" modifier="2">225 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+			<stat name="innate speed" value="25" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ENDURANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LARGE_PAWS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIBERNATE" />
+		</rules>
+	</element>
+	<element name="Endurance" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_ENDURANCE">
+		<description>
+			<p>Bearkin can call on mighty reserves of stamina in times of need. As a bonus action, you can gain 1d12 plus your Constitution modifier temporary hit points. The bonus hit points last for 1 hour. Once you use this ability, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short-Long Rest">
+			<description>As a bonus action, you can gain 1d12 plus your Constitution modifier temporary hit points. The bonus hit points last for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Drow Magic" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_LARGE_PAWS">
+		<description>
+			<p>You are proficient with your unarmed strikes which deal 1d4 points of bludgeoning damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>You are proficient with your unarmed strikes which deal 1d4 points of bludgeoning damage on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Hibernate" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_HIBERNATE">
+		<description>
+			<p>You can recover one level of exhaustion during a short rest. When you spend hit dice to recover hit points, double your Constitution modifier when determining how many hit points you recover for each hit die.</p>
+		</description>
+		<sheet>
+			<description>You can recover one level of exhaustion during a short rest. When you spend hit dice to recover hit points, double your Constitution modifier when determining how many hit points you recover for each hit die.</description>
+		</sheet>
+	</element>
+
+	<element name="Otterkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_OTTERKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Otterkin are lithe and flexible. Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Hold Breath.</em></strong> Otterkin are made for swimming. You can hold your breath for 15 minutes.</p>
+			<p class="indent"><strong><em>Nimble.</em></strong> You can move through the space of any creature at least one size category larger than you.</p>
+			<p class="indent"><strong><em>Numble.</em></strong> When moving through the space of a creature at least one size category larger than you, you can use your action to attempt to trip them. The target must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + your Dexterity modifier) or fall prone.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are short and skinny, perfect for swimming. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet. You have a Swim speed of 50 feet.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="1d10">3'0"</set>
+			<set name="weight" modifier="2">45 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="innate speed" value="25" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_SMALL"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HOLD_BREATH" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NIMBLE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NUMBLE" />
+		</rules>
+	</element>
+	<element name="Hold Breath" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_HOLD_BREATH">
+		<description>
+			<p>Otterkin are made for swimming. You can hold your breath for 15 minutes.</p>
+		</description>
+		<sheet>
+			<description display="false">You can hold your breath for 15 minutes.</description>
+		</sheet>
+	</element>
+	<element name="Nimble" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_NIMBLE">
+		<description>
+			<p>You can move through the space of any creature at least one size category larger than you.</p>
+		</description>
+		<sheet>
+			<description display="false">You can move through the space of any creature at least one size category larger than you.</description>
+		</sheet>
+	</element>
+	<element name="Numble" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_NUMBLE">
+		<description>
+			<p>When moving through the space of a creature at least one size category larger than you, you can use your action to attempt to trip them. The target must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + your Dexterity modifier) or fall prone.</p>
+		</description>
+		<sheet>
+			<description>When moving through the space of a creature at least one size category larger than you, you can use your action to attempt to trip them. The target must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + your Dexterity modifier) or fall prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Hyenakin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_HYENAKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Hyenakin are tough and agile. Your Constitution and Dexterity scores increase by 1.</p>
+			<p class="indent"><strong><em>Powerful Jaw.</em></strong> Hyenakin have an absurdly strong bite, and can lock their jaw with the strength of an industrial vice. You can use an action to make an unarmed bite attack for 1d8 plus your Strength modifier in piercing damage. On a successful hit you may choose to lock your jaw. The target must make a Dexterity saving throw (DC = 10 + your proficiency bonus + your Strength modifier) or become grappled.</p>
+			<p class="indent"><strong><em>Scavenger.</em></strong> You are used to eating scavenged meats and rotten food - to you, food is food. You have resistance to Poison damage and Illness status conditions.</p>
+			<p class="indent"><strong><em>Hideous Cackle.</em></strong> The laugh of a hyenakin is terrifying - as such you can use an action to laugh during combat, causing all enemies within 30ft of you to roll a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or become frightened. Once you use this trait, you cannot use it again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are tall and lanky, perfect for speed and power. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="1d10">5'5"</set>
+			<set name="weight" modifier="2">100 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1"/>
+			<stat name="dexterity" value="1" />
+			<stat name="innate speed" value="35" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_POWERFUL_JAW" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SCAVENGER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIDEOUS_CACKLE" />
+		</rules>
+	</element>
+	<element name="Powerful Jaw" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_POWERFUL_JAW">
+		<description>
+			<p>Hyenakin have an absurdly strong bite, and can lock their jaw with the strength of an industrial vice. You can use an action to make an unarmed bite attack for 1d8 plus your Strength modifier in piercing damage. On a successful hit you may choose to lock your jaw. The target must make a Dexterity saving throw (DC = 10 + your proficiency bonus + your Strength modifier) or become grappled.</p>
+		</description>
+		<sheet>
+			<description>You can use an action to make an unarmed bite attack for 1d8 plus your Strength modifier in piercing damage. On a successful hit you may choose to lock your jaw. The target must make a Dexterity saving throw (DC = 10 + your proficiency bonus + your Strength modifier) or become grappled.</description>
+		</sheet>
+	</element>
+	<element name="Scavenger" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_SCAVENGER">
+		<description>
+			<p>You are used to eating scavenged meats and rotten food - to you, food is food. You have resistance to Poison damage and Illness status conditions.</p>
+		</description>
+		<sheet>
+			<description display="false">You have resistance to Poison damage and Illness status conditions.</description>
+		</sheet>
+	</element>
+	<element name="Hideous Cackle" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_HIDEOUS_CACKLE">
+		<description>
+			<p>The laugh of a hyenakin is terrifying - as such you can use an action to laugh during combat, causing all enemies within 30ft of you to roll a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or become frightened. Once you use this trait, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description> You can use an action to laugh during combat, causing all enemies within 30ft of you to roll a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or become frightened.</description>
+		</sheet>
+	</element>
+
+	<element name="Lionkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_LIONKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Lionkin are strong, intimidating beasts. Your Strength increases by 2.</p>
+			<p class="indent"><strong><em>Imposing Roar.</em></strong> Lions are creatures that naturally demand respect. As an action, you can unleash a mighty roar. Enemies within 30 feet that can hear you must make a Wisdom save (DC equals 8 + your proficiency bonus + your Charisma modifier) or be frightened of you for the next minute. A creature can repeat its save at the end of its turn. On a successful save, the target is not frightened. This ability can be used once per long rest.</p>
+			<p class="indent"><strong><em>Pounce.</em></strong> If you move at least 20 feet in a straight line towards a creature and hit it with an attack in the same turn, the target must make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</p>
+			<p class="indent"><strong><em>Long Jump.</em></strong> With a 10-foot running start, you can long jump up to twice as far as your normally could.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are a bit taller than an average human and well-built. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d6">5'6"</set>
+			<set name="weight" modifier="2">155 lb.</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_IMPOSING_ROAR" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_POUNCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LONG_JUMP" />
+		</rules>
+	</element>
+	<element name="Imposing Roar" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_IMPOSING_ROAR">
+		<description>
+			<p>Lions are creatures that naturally demand respect. As an action, you can unleash a mighty roar. Enemies within 30 feet that can hear you must make a Wisdom save (DC equals 8 + your proficiency bonus + your Charisma modifier) or be frightened of you for the next minute. A creature can repeat its save at the end of its turn. On a successful save, the target is not frightened. This ability can be used once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>As an action, you can unleash a mighty roar. Enemies within 30 feet that can hear you must make a Wisdom save (DC equals 8 + your proficiency bonus + your Charisma modifier) or be frightened of you for the next minute. A creature can repeat its save at the end of its turn. On a successful save, the target is not frightened.</description>
+		</sheet>
+	</element>
+	<element name="Pounce" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_POUNCE">
+		<description>
+			<p>If you move at least 20 feet in a straight line towards a creature and hit it with an attack in the same turn, the target must make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</p>
+		</description>
+		<sheet>
+			<description>If you move at least 20 feet in a straight line towards a creature and hit it with an attack in the same turn, the target must make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked prone.</description>
+		</sheet>
+	</element>
+	<element name="Long Jump" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_LONG_JUMP">
+		<description>
+			<p>With a 10-foot running start, you can long jump up to twice as far as your normally could.</p>
+		</description>
+		<sheet display="false">
+			<description> With a 10-foot running start, you can long jump up to twice as far as your normally could.</description>
+		</sheet>
+	</element>
+
+	<element name="Tigerkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_TIGERKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Tigerkin have an air of elegance and composure about them. Your Dexterity and Wisdom scores increase by 1.</p>
+			<p class="indent"><strong><em>Born Hunter.</em></strong> Tigerkin have a sense for how to track prey. You have proficiency with Wisdom (Survival) checks and double your proficiency when using that skill.</p>
+			<p class="indent"><strong><em>Fangs.</em></strong> Your maw is full of razor-sharp fangs. You have a natural bite attack that you can make as an unarmed strike, that deals 1d6 + your Strength modifier points of piercing damage.</p>
+			<p class="indent"><strong><em>Natural Predator.</em></strong> As a bonus action, you can make a special attack with your bite. If it hits, you deal normal damage and the target starts to bleed, taking 1d4 points of bleed damage at the start of each of its turns until it receives magical healing or is treated with a DC 10 Wisdom(Medicine) check. Once you use this ability, you can't do so again until you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are taller and have a regal bearing. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d6">5'6"</set>
+			<set name="weight" modifier="2">155 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1"/>
+			<stat name="wisdom" value="1"/>
+			<stat name="innate speed" value="35" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BORN_HUNTER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FANGS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_PREDATOR" />
+		</rules>
+	</element>
+	<element name="Born Hunter" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_IMPOSING_ROAR">
+		<description>
+			<p>Tigerkin have a sense for how to track prey. You have proficiency with Wisdom (Survival) checks and double your proficiency when using that skill.</p>
+		</description>
+		<sheet>
+			<description> You have proficiency with Wisdom (Survival) checks and double your proficiency when using that skill.</description>
+		</sheet>
+	</element>
+	<element name="Fangs" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_FANGS">
+		<description>
+			<p>Your maw is full of razor-sharp fangs. You have a natural bite attack that you can make as an unarmed strike, that deals 1d6 + your Strength modifier points of piercing damage.</p>
+		</description>
+		<sheet>
+			<description> You have a natural bite attack that you can make as an unarmed strike, that deals 1d6 + your Strength modifier points of piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Natural Predator" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_NATURAL_PREDATOR">
+		<description>
+			<p>As a bonus action, you can make a special attack with your bite. If it hits, you deal normal damage and the target starts to bleed, taking 1d4 points of bleed damage at the start of each of its turns until it receives magical healing or is treated with a DC 10 Wisdom(Medicine) check. Once you use this ability, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short-Long Rest">
+			<description> As a bonus action, you can make a special attack with your bite. If it hits, you deal normal damage and the target starts to bleed, taking 1d4 points of bleed damage at the start of each of its turns until it receives magical healing or is treated with a DC 10 Wisdom(Medicine) check.</description>
+		</sheet>
+	</element>
+
+	<element name="Ratkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_TIGERKIN">
+		<supports>Furkin</supports>
+		<description>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Ratkin are innovative and enjoy tinkering. Your Intelligence score increases by 2.</p>
+			<p class="indent"><strong><em>Scrap Collector.</em></strong> Ratkin are always looking for bits of materials to scrap together. You are proficient with tinker's tools and you add double your proficiency bonus when using them. You always have enough materials to make and repair simple mechanical items.</p>
+			<p class="indent"><strong><em>Scraggly.</em></strong> You count as one size category smaller when determining what size spaces you can squeeze through.</p>
+			<p class="indent"><strong><em>Filth Diver.</em></strong> You have advantage on saving throws to resist poison and disease, and have resistance to poison damage.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are short and wiry. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet. You can burrow at 10 feet per round, and leave behind a stable tunnel a creature your size can fit through.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d4">3'0"</set>
+			<set name="weight" modifier="2">35 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2"/>
+			<stat name="innate speed" value="25" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_SMALL"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SCRAP_COLLECTOR" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SCRAGGLY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FILTH_DIVER" />
+		</rules>
+	</element>
+	<element name="Scrap Collector" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_SCRAP_COLLECTOR">
+		<description>
+			<p>Ratkin are always looking for bits of materials to scrap together. You are proficient with tinker's tools and you add double your proficiency bonus when using them. You always have enough materials to make and repair simple mechanical items.</p>
+		</description>
+		<sheet display="false">
+			<description> You are proficient with tinker's tools and you add double your proficiency bonus when using them. You always have enough materials to make and repair simple mechanical items.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS"/>
+		</rules>
+	</element>
+	<element name="Scraggly" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_SCRAGGLY">
+		<description>
+			<p>You count as one size category smaller when determining what size spaces you can squeeze through.</p>
+		</description>
+		<sheet>
+			<description display="false"> You count as one size category smaller when determining what size spaces you can squeeze through.</description>
+		</sheet>
+	</element>
+	<element name="Filth Diver" type="Racial Trait" source="D&amp;D Wiki" id="ID_RACIAL_TRAIT_FILTH_DIVER">
+		<description>
+			<p>You have advantage on saving throws to resist poison and disease, and have resistance to poison damage.</p>
+		</description>
+		<sheet>
+			<description> You have advantage on saving throws to resist poison and disease, and have resistance to poison damage.</description>
+		</sheet>
+	</element>
+</elements>
