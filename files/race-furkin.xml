@@ -2,11 +2,6 @@
 <elements>
 	<info>
 		<name>Furkin</name>
-		<description></description>
-		<author url="https://www.dandwiki.com">Wiki User</author>
-		<update version="0.0.1">
-			<file name="race-furkin.xml"/>
-		</update>
 	</info>
 
 	<element name="Furkin" type="Race" source="D&amp;D Wiki" id="ID_RACE_FURKIN">
@@ -45,6 +40,7 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FURKIN_SUBRACE" />
 		</rules>
 	</element>
 	<element name="Fey Ancestry" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_FEY_RESISTANCE">
@@ -54,6 +50,15 @@
 		<sheet>
 			<description>Advantage on saving throws against being charmed and frightened.</description>
 		</sheet>
+	</element>
+	<element name="Furkin Subrace" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_FURKIN_SUBRACE">
+		<description>
+			<p>Wolfkin, Foxkin, Bearkin, Otterkin, Hyenakin, Lionkin, Ratkin.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Furkin Subrace" supports="Furkin"
+		</rules>
 	</element>
 
 	<element name="Wolfkin" type="Sub Race" source="D&amp;D Wiki" id="ID_SUB_RACE_WOLFKIN">
