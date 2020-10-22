@@ -2,6 +2,9 @@
 <elements>
 	<info>
 		<name>Furkin</name>
+		<update version="0.2">
+			<file name="race-furkin.xml" url="https://raw.githubusercontent.com/WisnuYudha/auroracustomsource/master/files/race-furkin.xml"/>
+		</update>
 	</info>
 
 	<element name="Furkin" type="Race" source="D&amp;D Wiki" id="ID_RACE_FURKIN">
